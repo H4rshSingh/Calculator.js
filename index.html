@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background: linear-gradient(to right, rgba(255, 0, 225, 0.366), rgba(35, 134, 4, 0.414));
+        }
+
+        h1 {
+            text-align: center;
+            font-size: 3rem;
+        }
+
+        .container {
+            width: fit-content;
+            margin: auto;
+            padding: .4rem;
+            box-shadow: 0 0 4px 1px black;
+            background-color: blanchedalmond;
+            border-radius: 10px;
+        }
+
+        input {
+            margin: 0.50rem;
+            width: 21.5rem;
+            height: 4rem;
+            font-size: 2rem;
+            padding: 2px;
+            border: 2px solid black;
+            box-shadow: 0 0 3px 1px black;
+            border-radius: 10px;
+            background-color: rgb(190, 208, 249) ;
+        }
+
+        table {
+            margin: auto;
+
+        }
+
+        button {
+            font-size: 2rem;
+            width: 5rem;
+            height: 4rem;
+            margin: .2rem;
+            box-shadow: 0 0 3px 0px black;  
+            background-color: rgb(71, 232, 241); 
+            cursor: pointer;  
+        }
+        button:hover{
+            
+            background-color: rgb(115, 109, 109);   
+            color: white;
+            
+        }
+        
+         .equalBtn, .cBtn{
+            background-color: red;
+            color: white;
+        }
+        
+        
+    </style>
+
+</head>
+
+<body>
+    <h1>Calculator</h1>
+    <div class="container">
+        <input id="screen" type="text">
+        <table>
+            <tr>
+                <td><button>(</button></td>
+                <td><button>)</button></td>
+                <td><button>Del</button></td>
+                <td><button class="cBtn">C</button></td>
+            </tr>
+            <tr>
+                <td><button>7</button></td>
+                <td><button>8</button></td>
+                <td><button>9</button></td>
+                <td><button>/</button></td>
+            </tr>
+            <tr>
+                <td><button>4</button></td>
+                <td><button>5</button></td>
+                <td><button>6</button></td>
+                <td><button>X</button></td>
+            </tr>
+            <tr>
+                <td><button>1</button></td>
+                <td><button>2</button></td>
+                <td><button>3</button></td>
+                <td><button>-</button></td>
+            </tr>
+            <tr>
+                <td><button>0</button></td>
+                <td><button>.</button></td>
+                <td><button id="equal" class="equalBtn">=</button></td>
+                <td><button>+</button></td>
+            </tr>
+        </table>
+    </div>
+
+    <script src="index.js"></script>
+
+</body>
+
+</html>
